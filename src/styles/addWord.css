@@ -1,0 +1,118 @@
+.insertTextForm {
+    color:#0a192b;
+    border-bottom: 3px solid #3c7a63;
+}
+
+.insertTextForm.night {
+    color: #c5e2d7;
+    border-bottom: 3px solid #54588d;
+}
+
+.addWordPage {
+    padding: 10px 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    background-color: #c5e2d7;
+}
+
+.addWordPage.night {
+    background-color: #070b44;
+}
+
+.warning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning-logo {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.warning-text {
+    color: #6d6767;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70%;
+    margin-bottom: 30px;
+}
+
+.save-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    background: #154734;
+    border-radius: 24px;
+    width: 150px;
+}
+
+.save-button.night {
+    background: #72618b;
+}
+
+.save-button:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+    background-color: #3c7a63;
+}
+
+.save-button.night:hover {
+    background-color: #a8b9d4;
+}
+
+.go-home-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    background: #151a47;
+    border-radius: 24px;
+    width: 150px;
+}
+
+.go-home-button.night {
+    background: #3a2757;
+}
+
+.go-home-button:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+    background-color: #2d3791;
+}
+
+.go-home-button.night:hover {
+    background: #674994;
+}
+
+
+.begin-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border-color: #3c7a63;
+    color:#3c7a63;
+    width: 150px;
+    
+    background: #c5e2d7;
+    border-radius: 24px;
+}
+
+.begin-button.night {
+    border-color: #c5e2d7;
+    color:#c5e2d7;
+    background: #070b44;
+}
+
+.begin-button:hover {
+    transition:0.5s;
+    transform: scale(1.05);
+    background-color: #f0ffff;
+}
+
+.begin-button.night:hover {
+    background-color: #54588d;
+}

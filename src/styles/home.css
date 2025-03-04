@@ -1,0 +1,167 @@
+.homePage{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    background-color: #c5e2d7;
+}
+
+.homePage.night {
+    background-color: #070b44;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 200%;
+    color:#154734;
+    margin: 10px;
+}
+
+.title.night {
+    color:#b197d8;
+}
+
+.text{
+    color:#154734; 
+}
+
+.text.night {
+    color:#dfdfda; 
+}
+
+.buttons{
+    margin: 20px;
+}
+
+.start-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    width: 150px;
+    
+    background: #154734;
+    border-radius: 24px;
+}
+
+.start-button.night {
+    background: #72618b;
+}
+
+.start-button:hover{
+    transition:0.5s;
+    transform: scale(1.05);
+    background-color: #3c7a63;
+    
+    cursor:pointer;
+}
+
+.start-button.night:hover {
+    background-color: #a8b9d4;
+}
+
+.add-word-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border-color: #3c7a63;
+    color:#3c7a63;
+
+    background: #c5e2d7;
+    border-radius: 24px;
+}
+
+.add-word-button.night {
+    border-color: #c5e2d7;
+    color:#c5e2d7;
+
+    background: #070b44;
+}
+
+.add-word-button:hover{
+    transition:0.5s;
+    transform: scale(1.05);
+    background-color: #f0ffff;
+    
+    cursor:pointer;
+}
+
+.add-word-button.night:hover {
+    background-color: #54588d;
+}
+
+.rodapie{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color:#609ED4;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.toggle-btn {
+    background-color: #102f35;
+    border-radius: 99px;
+    width: 50px;
+    height: 30px;
+    transition: background-color 0.1s ease, border-color 0.2 ease;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.748);
+    position: relative;
+}
+
+.toggle-btn .thumb {
+    height: 20px;
+    width: 20px;
+    background-color: #f0ffff;
+    border-radius: 99px;
+    transform: translateX(0px);
+    transition: left 0.15s ease;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-btn .toggled {
+    background-color: #f0ffff;
+}
+
+.toggle-btn:hover {
+    background-color: #153e46;
+}
+
+.toggle-btn.toggled .thumb {
+    left: calc(50px - 25px);
+}
+
+.sun {
+    max-width: 25px;
+    opacity: 0.5;
+    padding-bottom: 2px;
+    filter: invert(1);
+}
+
+.sun.selected {
+    opacity: 0.8;
+}
+
+.moon {
+    max-width: 20px;
+    opacity: 0.5;
+}
+
+.moon.selected {
+    opacity: 0.8;
+    filter: invert(1);
+}

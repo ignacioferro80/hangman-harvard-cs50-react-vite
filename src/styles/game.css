@@ -1,0 +1,102 @@
+.gamePage {
+    background-color: #c5e2d7;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.gamePage.night {
+    background-color: #070b44;
+}
+
+.gamePage.blurred {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.testLetterInput {
+    color:#0a192b;
+    border-bottom: 3px solid #3c7a63;
+    margin-bottom: 10px;
+}
+
+.testLetterInput.night {
+    color: #c5e2d7;
+    border-bottom: 3px solid #54588d;
+}
+
+.test-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    background: #154734;
+    border-radius: 24px;
+    width: 150px;
+}
+
+.test-button.night{
+    background: #72618b;
+}
+
+.test-button:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+    background-color: #3c7a63;
+}
+
+.test-button.night:hover {
+    background-color: #a8b9d4;
+}
+
+.go-home-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    background: #151a47;
+    border-radius: 24px;
+}
+
+.go-home-button.night {
+    background: #3a2757;
+}
+
+.go-home-button:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+    background-color: #2d3791;
+}
+
+.go-home-button.night:hover {
+    background: #674994;
+}
+
+.new-game-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border-color: #154734;
+    color:#3c7a63;
+    width: 150px;
+
+    background: #c5e2d7;
+    border-radius: 24px;
+}
+
+.new-game-button.night{
+    border-color: #c5e2d7;
+    color:#c5e2d7;
+    background: #070b44;
+}
+
+.new-game-button:hover {
+    transition:0.5s;
+    transform: scale(1.05);
+    background-color: #f0ffff;
+}
+
+.new-game-button.night:hover {
+    background-color: #54588d;
+}
