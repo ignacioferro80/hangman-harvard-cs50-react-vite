@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { drawHangmanLine, drawHangmanWith_Errors } from "../utils/ahorcadoCanvas";
+import { drawHangmanLine, drawHangmanWith_Errors } from "../utils/hangmanCanvas.js";
 import '../styles/game.css';
 import FinishedGame from "../components/FinishedGame.jsx";
 import NotAvailable from "../components/NotAvailable.jsx";
