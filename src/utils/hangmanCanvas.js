@@ -1,229 +1,229 @@
-export const drawHangmanLine = (tablero, darkMode) => {
+export const drawHangmanLine = (bord, darkMode) => {
 
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
     if(darkMode) {
-            tablero.strokeStyle = "#bbacd1";
+            bord.strokeStyle = "#bbacd1";
     }
     else {
-        tablero.strokeStyle = "#070b44";
+        bord.strokeStyle = "#070b44";
     }
 
-    tablero.beginPath();
-    tablero.moveTo(480,250);
-    tablero.lineTo(720,250);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.moveTo(480,250);
+    bord.lineTo(720,250);
+    bord.stroke();
+    bord.closePath();
 
 }
 
-export const drawHanger = (tablero, darkMode) => {
+export const drawHanger = (bord, darkMode) => {
 
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
     if(darkMode) {
-        tablero.strokeStyle = "#bbacd1";
+        bord.strokeStyle = "#bbacd1";
     }
     else {
-        tablero.strokeStyle = "#070b44";
+        bord.strokeStyle = "#070b44";
     }
 
-    tablero.beginPath();
-    tablero.moveTo(500,250);
-    tablero.lineTo(500,70);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.moveTo(500,250);
+    bord.lineTo(500,70);
+    bord.stroke();
+    bord.closePath();
 
-    tablero.beginPath();
-    tablero.lineTo(500,70);
-    tablero.lineTo(590,70);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.lineTo(500,70);
+    bord.lineTo(590,70);
+    bord.stroke();
+    bord.closePath();
 
-    tablero.beginPath();
-    tablero.moveTo(590,70);
-    tablero.lineTo(590,90);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.moveTo(590,70);
+    bord.lineTo(590,90);
+    bord.stroke();
+    bord.closePath();
 
 }
 
-export const drawHead = (tablero, darkMode) => {
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
+export const drawHead = (bord, darkMode) => {
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
     if(darkMode) {
-        tablero.fillStyle = "#bbacd1";
-        tablero.strokeStyle = "#bbacd1";
+        bord.fillStyle = "#bbacd1";
+        bord.strokeStyle = "#bbacd1";
     }
     else {
-        tablero.strokeStyle = "#070b44";
-        tablero.fillStyle = "#070b44";
+        bord.strokeStyle = "#070b44";
+        bord.fillStyle = "#070b44";
     }
 
-    tablero.moveTo(590,120);
-    tablero.arc(590,120,30,0,2*Math.PI);
-    tablero.fill();
-    tablero.closePath();
+    bord.moveTo(590,120);
+    bord.arc(590,120,30,0,2*Math.PI);
+    bord.fill();
+    bord.closePath();
 }
 
-export const drawBody = (tablero, darkMode) => {
+export const drawBody = (bord, darkMode) => {
 
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
     if(darkMode) {
-        tablero.strokeStyle = "#bbacd1";
+        bord.strokeStyle = "#bbacd1";
     }
     else {
-        tablero.strokeStyle = "#070b44";
+        bord.strokeStyle = "#070b44";
     }
 
-    tablero.beginPath();
-    tablero.moveTo(590,140);
-    tablero.lineTo(590,180);
-    tablero.stroke();
-    tablero.closePath();
-
-}
-
-export const drawLeftLeg = (tablero, darkMode) => {
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
-    if(darkMode) {
-        tablero.strokeStyle = "#bbacd1";
-    }
-    else {
-        tablero.strokeStyle = "#070b44";
-    }
-
-    tablero.beginPath();
-    tablero.moveTo(590,180);
-    tablero.lineTo(570,220);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.moveTo(590,140);
+    bord.lineTo(590,180);
+    bord.stroke();
+    bord.closePath();
 
 }
 
-export const drawRightLeg = (tablero, darkMode) => {
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
+export const drawLeftLeg = (bord, darkMode) => {
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
     if(darkMode) {
-        tablero.strokeStyle = "#bbacd1";
+        bord.strokeStyle = "#bbacd1";
     }
     else {
-        tablero.strokeStyle = "#070b44";
+        bord.strokeStyle = "#070b44";
     }
 
-    tablero.beginPath();
-    tablero.moveTo(590,180);
-    tablero.lineTo(610,220);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.moveTo(590,180);
+    bord.lineTo(570,220);
+    bord.stroke();
+    bord.closePath();
+
 }
 
-export const drawLeftArm = (tablero, darkMode) => {
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
+export const drawRightLeg = (bord, darkMode) => {
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
     if(darkMode) {
-        tablero.strokeStyle = "#bbacd1";
+        bord.strokeStyle = "#bbacd1";
     }
     else {
-        tablero.strokeStyle = "#070b44";
+        bord.strokeStyle = "#070b44";
     }
 
-    tablero.beginPath();
-    tablero.moveTo(590,140);
-    tablero.lineTo(570,180);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.moveTo(590,180);
+    bord.lineTo(610,220);
+    bord.stroke();
+    bord.closePath();
 }
 
-export const drawRightArm = (tablero, darkMode) => {
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
+export const drawLeftArm = (bord, darkMode) => {
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
     if(darkMode) {
-        tablero.strokeStyle = "#bbacd1";
+        bord.strokeStyle = "#bbacd1";
     }
     else {
-        tablero.strokeStyle = "#070b44";
+        bord.strokeStyle = "#070b44";
     }
 
-    tablero.beginPath();
-    tablero.moveTo(590,140);
-    tablero.lineTo(610,180);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.moveTo(590,140);
+    bord.lineTo(570,180);
+    bord.stroke();
+    bord.closePath();
 }
 
-export const drawArrow = (tablero, darkMode) => {
-    tablero.lineWidth = 6;
-    tablero.lineCap = "round";
-    tablero.lineJoin = "round";
+export const drawRightArm = (bord, darkMode) => {
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
     if(darkMode) {
-        tablero.strokeStyle = "#bbacd1";
+        bord.strokeStyle = "#bbacd1";
     }
     else {
-        tablero.strokeStyle = "#070b44";
+        bord.strokeStyle = "#070b44";
     }
 
-    tablero.beginPath();
-    tablero.moveTo(540,150);
-    tablero.lineTo(645,150);
-    tablero.stroke();
-    tablero.closePath();
-
-    tablero.beginPath();
-    tablero.moveTo(645,150);
-    tablero.lineTo(625,140);
-    tablero.stroke();
-    tablero.closePath();
-
-    tablero.beginPath();
-    tablero.moveTo(645,150);
-    tablero.lineTo(625,160);
-    tablero.stroke();
-    tablero.closePath();
+    bord.beginPath();
+    bord.moveTo(590,140);
+    bord.lineTo(610,180);
+    bord.stroke();
+    bord.closePath();
 }
 
-export const drawHangmanWith_Errors = (errors, tablero, darkMode) => {
+export const drawArrow = (bord, darkMode) => {
+    bord.lineWidth = 6;
+    bord.lineCap = "round";
+    bord.lineJoin = "round";
+    if(darkMode) {
+        bord.strokeStyle = "#bbacd1";
+    }
+    else {
+        bord.strokeStyle = "#070b44";
+    }
+
+    bord.beginPath();
+    bord.moveTo(540,150);
+    bord.lineTo(645,150);
+    bord.stroke();
+    bord.closePath();
+
+    bord.beginPath();
+    bord.moveTo(645,150);
+    bord.lineTo(625,140);
+    bord.stroke();
+    bord.closePath();
+
+    bord.beginPath();
+    bord.moveTo(645,150);
+    bord.lineTo(625,160);
+    bord.stroke();
+    bord.closePath();
+}
+
+export const drawHangmanWith_Errors = (errors, bord, darkMode) => {
     
     if(errors == 7){
-        drawHanger(tablero, darkMode)
+        drawHanger(bord, darkMode)
     }
 
     else if(errors == 6){
-        drawHead(tablero, darkMode)
+        drawHead(bord, darkMode)
     }
 
     else if(errors == 5){
-        drawBody(tablero, darkMode)
+        drawBody(bord, darkMode)
     }
 
     else if(errors == 4){
-        drawLeftLeg(tablero, darkMode)
+        drawLeftLeg(bord, darkMode)
     }
 
     else if(errors == 3){
-        drawRightLeg(tablero, darkMode)
+        drawRightLeg(bord, darkMode)
     }
 
     else if(errors == 2){
-        drawLeftArm(tablero, darkMode)
+        drawLeftArm(bord, darkMode)
     }
 
     else if(errors == 1){
-        drawRightArm(tablero, darkMode)
+        drawRightArm(bord, darkMode)
     }
     
     else {
-        drawArrow(tablero, darkMode)
+        drawArrow(bord, darkMode)
     }
     
 }

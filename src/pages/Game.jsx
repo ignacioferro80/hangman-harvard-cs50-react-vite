@@ -41,17 +41,17 @@ const Game = ({darkMode, secretWordList}) => {
         setWon(false);
 
         const canvas = canvasRef.current;
-        const tablero = canvas.getContext("2d");
-        tableroRef.current = tablero;
+        const bord = canvas.getContext("2d");
+        tableroRef.current = bord;
         
         if(darkMode) {
-            tablero.fillStyle = "#070b44";
+            bord.fillStyle = "#070b44";
         }
         else {
-            tablero.fillStyle = "#c5e2d7";
+            bord.fillStyle = "#c5e2d7";
         }
-        tablero.fillRect(0, 0, canvas.width, canvas.height);
-        drawHangmanLine(tablero, darkMode);
+        bord.fillRect(0, 0, canvas.width, canvas.height);
+        drawHangmanLine(bord, darkMode);
         drawLinesForWord(newSecretWord);
     }, [reload]);
     
@@ -67,88 +67,88 @@ const Game = ({darkMode, secretWordList}) => {
 
     const drawLinesForWord = (newSecretWord) => {
 
-        const tablero = tableroRef.current;
+        const bord = tableroRef.current;
   
-        tablero.lineWidth = 6;
-        tablero.lineCap = "round";
-        tablero.lineJoin = "round";
+        bord.lineWidth = 6;
+        bord.lineCap = "round";
+        bord.lineJoin = "round";
         if(darkMode){
-            tablero.strokeStyle = "#bbacd1";
+            bord.strokeStyle = "#bbacd1";
             
         }
         else {
-            tablero.strokeStyle = "#070b44";
+            bord.strokeStyle = "#070b44";
         }
     
         const anchura = 600/newSecretWord.length;
 
         for(var i = 0; i < newSecretWord.length; i++) {
-            tablero.moveTo(360 + (anchura*i),330)
-            tablero.lineTo(410 + (anchura*i),330)
+            bord.moveTo(360 + (anchura*i),330)
+            bord.lineTo(410 + (anchura*i),330)
         }
     
-        tablero.stroke();
-        tablero.closePath();
+        bord.stroke();
+        bord.closePath();
     
     }
     
     const writeCorrectLetter = (index) => {
 
-        const tablero = tableroRef.current;
+        const bord = tableroRef.current;
 
-        tablero.font = "bold 52px Arial";
-        tablero.lineWidth = 6;
-        tablero.lineCap = "round";
-        tablero.lineJoin = "round";
+        bord.font = "bold 52px Arial";
+        bord.lineWidth = 6;
+        bord.lineCap = "round";
+        bord.lineJoin = "round";
         if(darkMode){
-            tablero.fillStyle = "#71ad97";
+            bord.fillStyle = "#71ad97";
         }
         else{
-            tablero.fillStyle = "#154734";
+            bord.fillStyle = "#154734";
         }
     
         var anchura = 600/secretWord.length;
-        tablero.fillText(secretWord[index], 362+(anchura*index), 320);
-        tablero.stroke();
+        bord.fillText(secretWord[index], 362+(anchura*index), 320);
+        bord.stroke();
     
         setLettersWritten([...lettersWritten, secretWord[index]]);
     }
     
     const writeCorrectLetterLeft = (index) => {
-        const tablero = tableroRef.current;
-        tablero.font = "bold 52px Arial";
-        tablero.lineWidth = 6;
-        tablero.lineCap = "round";
-        tablero.lineJoin = "round";
+        const bord = tableroRef.current;
+        bord.font = "bold 52px Arial";
+        bord.lineWidth = 6;
+        bord.lineCap = "round";
+        bord.lineJoin = "round";
         if(darkMode){
-            tablero.fillStyle = "#71ad97";
+            bord.fillStyle = "#71ad97";
         }
         else{
-            tablero.fillStyle = "#154734";
+            bord.fillStyle = "#154734";
         }
 
         var anchura = 600/secretWord.length;
-        tablero.fillText(secretWord[index], 332+(anchura*index), 320);
-        tablero.stroke();
+        bord.fillText(secretWord[index], 332+(anchura*index), 320);
+        bord.stroke();
     }
 
     const writeIncorrectLetter = (letra, errorsLeft) => {
 
-        const tablero = tableroRef.current;
+        const bord = tableroRef.current;
 
-        tablero.font = "bold 35px Arial";
-        tablero.lineWidth = 6;
-        tablero.lineCap = "round";
-        tablero.lineJoin = "round";
+        bord.font = "bold 35px Arial";
+        bord.lineWidth = 6;
+        bord.lineCap = "round";
+        bord.lineJoin = "round";
         if(darkMode){
-            tablero.fillStyle = "#884b4b";
+            bord.fillStyle = "#884b4b";
         }
         else{
-            tablero.fillStyle = "#421111";
+            bord.fillStyle = "#421111";
         }
-        tablero.fillText(letra, 300+(40*(10-errorsLeft)), 380, 40);
+        bord.fillText(letra, 300+(40*(10-errorsLeft)), 380, 40);
     
-        tablero.stroke();
+        bord.stroke();
     }
 
     const testLetter = () => {
